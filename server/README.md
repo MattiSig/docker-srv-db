@@ -1,6 +1,6 @@
 docker build --tag=web-server .
 
-docker run -p 3000:3000 -v c:/range/raf-isl/server:/home/node/code -v /home/node/code/node_modules web-server
+docker run -p 3000:3000 -v <path to proj>/server:/home/node/code -v /home/node/code/node_modules web-server
 
 // docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 
